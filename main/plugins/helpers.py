@@ -72,21 +72,3 @@ async def screenshot(video, duration, sender):
     else:
         None
 
-#Main Function------------------------------------------------------------------------------------------------------------
-@Client.on_message(filters.private)
-async def clone(client, message):
-    if message.reply_to_message and message.reply_to_message.text == "Send me the message link you want to start saving from, as a reply to this message.":
-        return
-    try:
-        link = get_link(message.text)
-        if not link:
-            return
-    except TypeError:
-        return
-    try:
-        join_message = await join(client, "FORCE_SUB_CHANNEL_USERNAME")
-        if join_message != "Successfully joined the Channel":
-            await message.reply(join_message)
-            return
-    except FloodWait as e:
-       

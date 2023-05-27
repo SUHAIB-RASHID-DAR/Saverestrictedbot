@@ -11,6 +11,7 @@ from main.plugins.pyroplug import get_msg
 from main.plugins.helpers import get_link, join, screenshot
 from ethon.telefunc import force_sub
 from .. import Bot as Client
+from .. import userbot
 #ft = f"To use this bot you've to join @{fs}."
 
 message = "Send me the message link you want to start saving from, as a reply to this message."

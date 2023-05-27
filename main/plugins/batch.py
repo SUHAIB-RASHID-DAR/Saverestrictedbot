@@ -39,7 +39,7 @@ async def _batch(client, message):
         #return       
     if f'{message.from_user.id}' in batch:
         return await message.reply("You've already started one batch, wait for it to complete you dumbfuck owner!")
-    if s != True:
+    #if s != True:
         msg = await message.reply("Send me the message link you want to start saving from.")
         link = await client.listen(msg)
         try:
@@ -70,7 +70,7 @@ async def _batch(client, message):
     batch.clear()
     batch_.clear()
     
-@Client.on_callback_query(filters.regex("cancel"))
+@Bot.on_callback_query(filters.regex("cancel"))
 async def cancel(client, callback_query):
     batch_.clear()
 

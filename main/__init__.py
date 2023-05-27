@@ -14,7 +14,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 # variables
 API_ID = 9583161
 API_HASH = "aecf9e2b7c655c4f916564ab6d598a73" 
-BOT_TOKEN = "6154897363:AAEt_4gDxXP7d-OvVdueOT4injRAEFLq7WU" 
+BOT_TOKEN = "6017979742:AAE_O4DFlKSaJm4FMt2RNwEkuTjjUwbd4Rw" 
 SESSION = "BQCRDmS9q2Gyo1Y-DZ9dikRBmz8h3sMz6qJ_t8X7M3rQUQHuTHpToUQisvaBLONVr-NBkDXy42bVKMH-1bCi7y0ouyDe7OPfs62cw6Y9OeZF8yGuSNAV1HFDJUOOACAl9U9YohuKaLDwTQf9bRAowwR1FeibZhvFrdAI3maCth--2ljnqzSmnGZ55jKs8BrgPVhpJB-9uVMv3Kbriifck103TwEmArwp3arK5WElSb_WukT_Vm9okUmOym2hCfkMm2Nif_psu1sqdxKca_HTmzZDf4A7drQiJmAJlmoj8RCVYe1zHcR0-jj4iW2EcQ6JPUkTKYLBtJoS4ZdInCgS1dNeAAAAAW3tcvEA"
 AUTH = 5973519392
 

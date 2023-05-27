@@ -16,7 +16,7 @@ from main.plugins.helpers import get_link, screenshot
 from pyrogram.errors import FloodWait
 
 from ethon.pyfunc import video_metadata
-from ethon.telefunc import force_sub
+#from ethon.telefunc import force_sub
 
 ft = f"To use this bot you've to join @{fs}."
 
@@ -33,10 +33,10 @@ async def _batch(client, message):
         return
     # wtf is the use of fsub here if the command is meant for the owner? 
     # well am too lazy to clean 
-    s, r = await force_sub(client, fs, message.from_user.id, ft) 
-    if s == True:
-        await message.reply(r)
-        return       
+    #s, r = await force_sub(client, fs, message.from_user.id, ft) 
+    #if s == True:
+        #await message.reply(r)
+        #return       
     if f'{message.from_user.id}' in batch:
         return await message.reply("You've already started one batch, wait for it to complete you dumbfuck owner!")
     if s != True:

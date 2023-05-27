@@ -35,10 +35,10 @@ async def clone(client: Client, message: Message):
     except TypeError:
         return
 
-    s, r = await force_sub(client, fs, message.from_user.id, ft)
-    if s:
-        await message.reply(r)
-        return
+    #s#, r = await force_sub(client, fs, message.from_user.id, ft)
+    #if s:
+        #await message.reply(r)
+        #return
 
     edit = await message.reply("Processing!")
     if f'{message.from_user.id}' in user:

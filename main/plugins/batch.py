@@ -14,7 +14,7 @@ from main.plugins.pyroplug import check, get_bulk_msg
 from main.plugins.helpers import get_link, screenshot
 
 from pyrogram.errors import FloodWait
-from .. import Bot as Client
+from .. import Bot
 from ethon.pyfunc import video_metadata
 #from ethon.telefunc import force_sub
 
@@ -27,10 +27,10 @@ async def get_pvt_content(client, chat, id):
     msg = await client.get_messages(chat, ids=id)
     return msg
 
-@Client.on_message(filters.private & filters.regex("^/batch"))
+@Bot.on_message(filters.private & filters.regex("^/batch"))
 async def _batch(client, message):
-    if message.from_user.id != AUTH:
-        return
+    #if message.from_user.id != AUTH:
+        #return
     # wtf is the use of fsub here if the command is meant for the owner? 
     # well am too lazy to clean 
     #s, r = await force_sub(client, fs, message.from_user.id, ft) 

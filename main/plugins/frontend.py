@@ -10,8 +10,8 @@ from pyrogram.types import Message
 from main.plugins.pyroplug import get_msg
 from main.plugins.helpers import get_link, join, screenshot
 from ethon.telefunc import force_sub
-from .. import Bot as Client
-from .. import userbot
+#from .. import Bot as Client
+from .. import userbot, Bot
 #ft = f"To use this bot you've to join @{fs}."
 
 message = "Send me the message link you want to start saving from, as a reply to this message."
@@ -24,7 +24,7 @@ user=[]
 # Make these codes shorter and clean
 # ofc will never do it.
 
-@Client.on_message(filters.private)
+@Bot.on_message(filters.private)
 async def clone(client: Client, message: Message):
     if message.reply_to_message and message.reply_to_message.text == message:
         return

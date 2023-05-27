@@ -6,8 +6,8 @@ import re
 import subprocess
 import time
 
-from main.plugins.pyroplug import get_msg
-from main.plugins.helpers import get_link, join
+#from main.plugins.pyroplug import get_msg
+#from main.plugins.helpers import get_link, join
 
 #Join private chat-------------------------------------------------------------------------------------------------------------
 async def join(client, invite_link):

@@ -23,7 +23,7 @@ user=[]
 # Make these codes shorter and clean
 # ofc will never do it.
 
-@Client.on_message(filters.private & ~filters.command("start"))
+@Client.on_message(filters.private)
 async def clone(client: Client, message: Message):
     if message.reply_to_message and message.reply_to_message.text == message:
         return

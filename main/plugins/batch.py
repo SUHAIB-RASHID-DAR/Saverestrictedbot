@@ -14,7 +14,7 @@ from main.plugins.pyroplug import check, get_bulk_msg
 from main.plugins.helpers import get_link, screenshot
 
 from pyrogram.errors import FloodWait
-
+from .. import Bot as Client
 from ethon.pyfunc import video_metadata
 #from ethon.telefunc import force_sub
 
